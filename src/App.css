@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 60%;
+}
+
+button {
+    border: none;
+
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+    margin-top: -1rem;
+    transition: 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    /* box-shadow: 0px 10px 20px 2px #0000001b; */
+
+}
+
+button:hover {
+    box-shadow: 0px 8px 15px 2px #00000010;
+    transform: translateY(-0.5rem);
+
+}
+
+h2,
+h3 {
+    color: whitesmoke;
+}
+
+h4 {
+    color: rgba(0, 0, 0, 0.685);
+}
+.App {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(115, 105, 168);
+    
+}
+.videoTag {
+    height: 150%;
+    width: 300vh;
+    padding: none;
+    position: fixed;
+}
+
+
+
+.card {
+
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0px 20px 30px 5px #0000001b;
+    border: 2px solid rgba(245, 245, 245, 0.104);
+
+
+}
+
+.card-location {
+    padding-top: 1rem;
+}
+
+.temperature {
+    font-size: 4rem;
+    margin-bottom: -4rem;
+    z-index: 2;
+    color: #05050578
+}
+
+.card-name-weather {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-style: italic;
+    
+
+}
+
+.icon-temp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+
+}
+
+.icon-weather {
+    opacity: 0.9;
+}
+
+.btn-unit {
+    margin-top: -2rem;
+}
+
+.description-weather {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.7rem 0;
+    border-radius: 15px;
+    border-top: 2px solid rgba(20, 0, 41, 0.172);
+
+
+}
+
+.description-weather h4 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.5rem;
+
+}
+
+
+
+.loading {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    box-shadow: 0px 20px 30px 5px #0000001b;
+    /* width: 50px;
+    height: 50px; */
+    position: relative;
+  }
+  
+  .d1 , .d2 {
+    border: 8px solid #1c003b81;
+    border-radius: 50px;
+  }
+  
+  .loading .d1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-left-color: transparent;
+    animation: load161 1s linear infinite;
+  }
+  
+  .loading .d2 {
+    width: 100px;
+    height: 100px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    /* margin: 7.5px; */
+    animation: load2812 1s linear infinite;
+  }
+  
+  @keyframes load161 {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes load2812 {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
